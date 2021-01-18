@@ -50,6 +50,7 @@ public class Alumno {
      */
     public String getNombreUsuarioGithub() {
         String nombreUsuario = "";
+        String matriculaUsuario = "";
         if (nombre.length() < 3){ 
             nombreUsuario = nombre;
         }
@@ -58,12 +59,12 @@ public class Alumno {
         }
         
         if(numeroMatricula.length() < 4){
-            numeroMatricula = numeroMatricula;
+            matriculaUsuario = numeroMatricula;
         }
         else if(numeroMatricula.length() >= 4){
-            numeroMatricula = numeroMatricula.substring(0, 4);
+            matriculaUsuario = numeroMatricula.substring(0, 4);
         }
 
-        return nombreUsuario + numeroMatricula;
+        return nombreUsuario + matriculaUsuario;
     }
 }
